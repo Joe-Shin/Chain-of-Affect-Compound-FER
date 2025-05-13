@@ -45,4 +45,46 @@ conda activate phi3v
 We use the RAF-DB dataset for both training and evaluation.
 1. Visit the RAF-DB dataset page and request access:
 http://www.whdeng.cn/RAF/model1.html
-2. After 
+2. Download the "aligned" images in both basic and compound emotion
+3. Save all train image samples of both basic and compound emotion under "RAF-DB/all/train" and save all test image samples of both basic and compound emotion under "RAF-DB/all/valid"
+
+_Citation: Li, Shan, et al. "Reliable crowdsourcing and deep locality-preserving learning for expression recognition in the wild." CVPR 2017._
+
+---
+
+## 🏋️ Finetuning
+
+To finetune the model with LoRA using Chain-of-Affect prompting on the RAF-DB train set, run the following command:
+
+```bash
+bash scripts/finetune_lora_vision_all_ft_only.sh
+```
+
+---
+
+## 🧪 Inference
+
+To test the model on the RAF-DB test set with either basic or compound FER, follow these steps:
+### 1. Download the pretrained weights from Hugging Face:
+
+#### 🐧 For Linux/macOS users:
+
+Use the following commands to download the weights into the correct directory:
+
+```bash
+mkdir -p output/lora_vision_all_ft_only
+
+wget https://huggingface.co/joeshin3956/Chain-of-Affect/resolve/main/adapter_model.safetensors -O output/lora_vision_all_ft_only/adapter_model.safetensors
+
+wget https://huggingface.co/joeshin3956/Chain-of-Affect/resolve/main/non_lora_state_dict.bin -O output/lora_vision_all_ft_only/non_lora_state_dict.bin
+```
+
+#### 🪟 For Windows users:
+
+Visit the Hugging Face model page for the Chain-of-Affect pretrained model and manually download the following files:
+- [adapter_model.safetensors](https://huggingface.co/joeshin3956/Chain-of-Affect/resolve/main/adapter_model.safetensors)
+- [non_lora_state_dict.bin](https://huggingface.co/joeshin3956/Chain-of-Affect/resolve/main/non_lora_state_dict.bin)
+
+under the path: "output/lora_vision_all_ft_only".
+
+### 2.
