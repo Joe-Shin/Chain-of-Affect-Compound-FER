@@ -2,7 +2,7 @@
 This is the repository for the Chain of Affect model, a VLM-based pipeline for compound FER
 
 ## 📑 Table of Contents
-- [About the Project](#🧠-about-the-project)
+- [About the Project](#-🧠-about-the-project)
 - [Installation](#⚙️-installation)
 - [Dataset Preparation](#dataset-preparation)
 - [Finetuning](#finetuning)
