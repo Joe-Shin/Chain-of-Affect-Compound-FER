@@ -31,7 +31,7 @@ This repository contains:
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 Set up the environment using `environment.yaml`:
 
@@ -42,7 +42,7 @@ conda activate phi3v
 
 ---
 
-## 📂 Dataset Preparation
+## Dataset Preparation
 
 We use the RAF-DB dataset for both training and evaluation.
 1. Visit the RAF-DB dataset page and request access:
@@ -54,7 +54,7 @@ _Citation: Li, Shan, et al. "Reliable crowdsourcing and deep locality-preserving
 
 ---
 
-## 🏋️ Finetuning
+## Finetuning
 
 To finetune the model with LoRA using Chain-of-Affect prompting on the RAF-DB train set, run the following command:
 
@@ -66,7 +66,7 @@ Adjust the options in ```finetune_lora_vision_all_ft_only.sh``` according to you
 
 ---
 
-## 🧪 Inference
+## Inference
 
 To test the model on the RAF-DB test set with either basic or compound FER, follow these steps:
 ### 1. Download the pretrained weights from Hugging Face:
@@ -104,7 +104,7 @@ This notebook contains code for:
 
 ---
 
-## 🎥 Webcam Demo (Proof of Concept)
+## Webcam Demo (Proof of Concept)
 
 ![Webcam Demo](assets/output_compounfer_edit.gif)
 
@@ -126,12 +126,12 @@ To run the program:
 
 ---
 
-## 📄 License
+## License
 This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE) file for details.
 <!--
 ---
 
-## 📚 Citation
+## Citation
 If you use this work in your research, please consider citing:
 ```bibtex
 @misc{chainofaffect202X,
@@ -145,7 +145,7 @@ If you use this work in your research, please consider citing:
 -->
 ---
 
-## 🙏 References and Acknowledgements
+## References and Acknowledgements
 This project is based on
 - 📄 Phi-3 Technical Report: [_Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone_](https://arxiv.org/abs/2404.14219)
 - 🤗 Base Model: [```microsoft/Phi-3.5-vision-instruct```](https://huggingface.co/microsoft/Phi-3.5-vision-instruct)
