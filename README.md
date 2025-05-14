@@ -3,6 +3,7 @@ This is the repository for the Chain of Affect model, a VLM-based pipeline for c
 
 ## 📑 Table of Contents
 - [About the Project](#about-the-project)
+- [Results and Benchmark Comparison](#results-and-benchmark-comparison)
 - [Installation](#installation)
 - [Dataset Preparation](#dataset-preparation)
 - [Finetuning](#finetuning)
