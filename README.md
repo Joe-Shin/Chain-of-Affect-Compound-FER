@@ -2,8 +2,8 @@
 This is the repository for the Chain of Affect model, a VLM-based pipeline for compound FER
 
 ## 📑 Table of Contents
-- [About the Project](#about-the-project)
-- [Installation](#installation)
+- [About the Project](#🧠-about-the-project)
+- [Installation](#⚙️-installation)
 - [Dataset Preparation](#dataset-preparation)
 - [Finetuning](#finetuning)
 - [Inference](#inference)
@@ -17,10 +17,12 @@ This is the repository for the Chain of Affect model, a VLM-based pipeline for c
 
 ## 🧠 About the Project
 
+<!--
 This repository accompanies the paper:
 
 > **Chain-of-Affect: Compound Facial Expression Recognition through Sequential Vision Language Model Prompting for Interactive Robots**  
 > (Submitted to EAAI 202X)
+-->
 
 This repository contains:
 - Code to **finetune** [Phi-3.5 Vision](https://huggingface.co/microsoft/Phi-3.5-vision-instruct) on the RAF-DB training set using the proposed Chain-of-Affect prompting method.
@@ -60,7 +62,7 @@ To finetune the model with LoRA using Chain-of-Affect prompting on the RAF-DB tr
 bash scripts/finetune_lora_vision_all_ft_only.sh
 ```
 
-Adjust the options in finetune_lora_vision_all_ft_only.sh according to your intended settings.
+Adjust the options in ```finetune_lora_vision_all_ft_only.sh``` according to your intended settings.
 
 ---
 
@@ -89,7 +91,7 @@ Visit the Hugging Face model page for the Chain-of-Affect pretrained model and m
 
 and save them under the path: ```output/lora_vision_all_ft_only```
 
-Note: Only the large files (```adapter_model.safetensors```, ```non_lora_state_dict.bin```) are hosted there. All config files are included in this repo under ```output/lora_vision_all_ft_only/```
+Note: Only the large files (```adapter_model.safetensors```, ```non_lora_state_dict.bin```) are hosted on huggingface. All config files are included in this repo under ```output/lora_vision_all_ft_only/```
 
 ### 2. Run the Inference Script
 
@@ -103,6 +105,8 @@ This notebook contains code for:
 ---
 
 ## 🎥 Webcam Demo (Proof of Concept)
+
+![Webcam Demo](assets/output_compounfer_edit.gif)
 
 > ⚠️ This is an early proof-of-concept and not yet a flawless real-time demo.
 >
