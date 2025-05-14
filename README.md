@@ -15,7 +15,7 @@ This is the repository for the Chain of Affect model, a VLM-based pipeline for c
 
 ---
 
-##About the Project
+## About the Project
 
 <!--
 This repository accompanies the paper:
