@@ -22,7 +22,7 @@ This repository accompanies the paper:
 > **Chain-of-Affect: Compound Facial Expression Recognition through Sequential Vision Language Model Prompting for Interactive Robots**  
 > (Submitted to EAAI 202X)
 
-It contains:
+This repository contains:
 - Code to **finetune** [Phi-3.5 Vision](https://huggingface.co/microsoft/Phi-3.5-vision-instruct) on the RAF-DB training set using the proposed Chain-of-Affect prompting method.
 - Scripts for **inference** on the RAF-DB test set for both basic and compound facial expression recognition (FER).
 - A **webcam demo** script to test real-time compound FER.
@@ -110,7 +110,7 @@ This notebook contains code for:
 
 This webcam demo accesses the webcam connected to the system and makes predictions about the current facial expression using the webcam footage.
 
-We use the YOLOv8-face model for cropping the facial region to use as input for the model.
+We use the [YOLOv8n-face model](https://github.com/akanametov/yolo-face) for cropping the facial region to use as input for the model.
 
 To run the program:
 1. [Download the pretrained weights from Hugging Face](#1-download-the-pretrained-weights-from-hugging-face), if you haven't already.
@@ -124,3 +124,27 @@ To run the program:
 
 ## 📄 License
 This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE) file for details.
+<!--
+---
+
+## 📚 Citation
+If you use this work in your research, please consider citing:
+```bibtex
+@misc{chainofaffect202X,
+  title={Chain-of-Affect: Compound Facial Expression Recognition through Sequential Vision Language Model Prompting for Interactive Robots},
+  author={Your Name},
+  year={202X},
+  note={Submitted to EAAI},
+  url={https://github.com/Joe-Shin/Chain-of-Affect_Compound-FER}
+}
+```
+-->
+---
+
+## 🙏 References and Acknowledgements
+This project is based on
+- 📄 Phi-3 Technical Report: [_Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone_](https://arxiv.org/abs/2404.14219)
+- 🤗 Base Model: [```microsoft/Phi-3.5-vision-instruct```](https://huggingface.co/microsoft/Phi-3.5-vision-instruct)
+- 🔬 Dataset: [RAF-DB](http://www.whdeng.cn/RAF/model1.html)
+- 🔍 Face Region Cropping Model Used: [YOLOv8n-face](https://github.com/akanametov/yolo-face)
+- 🛠️ Finetuning Codebase Based On: [Phi3-Vision-Finetune GitHub Repository](https://github.com/2U1/Phi3-Vision-Finetune/tree/main)
