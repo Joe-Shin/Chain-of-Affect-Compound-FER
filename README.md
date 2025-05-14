@@ -46,7 +46,7 @@ We use the RAF-DB dataset for both training and evaluation.
 1. Visit the RAF-DB dataset page and request access:
 http://www.whdeng.cn/RAF/model1.html
 2. Download the "aligned" images in both basic and compound emotion
-3. Save all train image samples of both basic and compound emotion under "RAF-DB/all/train" and save all test image samples of both basic and compound emotion under "RAF-DB/all/valid"
+3. Save all train image samples of both basic and compound emotion under ```RAF-DB/all/train``` and save all test image samples of both basic and compound emotion under ```RAF-DB/all/valid```
 
 _Citation: Li, Shan, et al. "Reliable crowdsourcing and deep locality-preserving learning for expression recognition in the wild." CVPR 2017._
 
@@ -59,6 +59,8 @@ To finetune the model with LoRA using Chain-of-Affect prompting on the RAF-DB tr
 ```bash
 bash scripts/finetune_lora_vision_all_ft_only.sh
 ```
+
+Adjust the options in finetune_lora_vision_all_ft_only.sh according to your intended settings.
 
 ---
 
@@ -85,6 +87,22 @@ Visit the Hugging Face model page for the Chain-of-Affect pretrained model and m
 - [adapter_model.safetensors](https://huggingface.co/joeshin3956/Chain-of-Affect/resolve/main/adapter_model.safetensors)
 - [non_lora_state_dict.bin](https://huggingface.co/joeshin3956/Chain-of-Affect/resolve/main/non_lora_state_dict.bin)
 
-under the path: "output/lora_vision_all_ft_only".
+and save them under the path: ```output/lora_vision_all_ft_only```
 
-### 2.
+### 2. Run the Inference Script
+
+Once the model files are in place, run the inference code by opening and executing ```finetune_lora_vision_all_ft_only.ipynb```
+
+This notebook contains code for:
+- Loading the pretrained model and LoRA adapter
+- Running inference on the RAF-DB test set for basic and compound FER (separately)
+- Calculating the UAR for both tests
+
+---
+
+## 🎥 Webcam Demo (Proof of Concept)
+
+> ⚠️ This is an early proof-of-concept and not yet a flawless real-time demo.
+>
+> It may have performance bottlenecks and bugs.
+
