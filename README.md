@@ -85,7 +85,7 @@ wget https://huggingface.co/joeshin3956/Chain-of-Affect/resolve/main/non_lora_st
 
 #### 🪟 For Windows users:
 
-Visit the Hugging Face model page for the Chain-of-Affect pretrained model and manually download the following files:
+Visit the [Hugging Face model page](https://huggingface.co/joeshin3956/Chain-of-Affect/tree/main) for the Chain-of-Affect pretrained model and manually download the following files:
 - [adapter_model.safetensors](https://huggingface.co/joeshin3956/Chain-of-Affect/resolve/main/adapter_model.safetensors)
 - [non_lora_state_dict.bin](https://huggingface.co/joeshin3956/Chain-of-Affect/resolve/main/non_lora_state_dict.bin)
 
