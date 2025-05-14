@@ -63,6 +63,8 @@ The following table compares the performance of our proposed method against prev
 <a name="ref8">[8]</a> [_Pyramid with super resolution for in-the-wild facial expression recognition_](https://ieeexplore.ieee.org/abstract/document/9143068)  
 <a name="ref9">[9]</a> [_Facial expression recognition in the wild via deep attentive center loss_](https://openaccess.thecvf.com/content/WACV2021/html/Farzaneh_Facial_Expression_Recognition_in_the_Wild_via_Deep_Attentive_Center_WACV_2021_paper.html)
 
+---
+
 ## Installation
 
 Set up the environment using `environment.yaml`:
