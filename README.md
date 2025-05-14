@@ -31,6 +31,37 @@ This repository contains:
 
 ---
 
+## Results and Benchmark Comparison
+
+The following table compares the performance of our proposed method against previous state-of-the-art models on the RAF-DB dataset for 11-class compound facial expression recognition.
+
+| Method | UAR |
+|--------|-----|
+| **CoA Pipeline (proposed method)** | **0.609** |
+| C-EXPR-NET [[1]](#ref1) | 0.553 |
+| C-EXPR-NET pretrained on C-EXPR-DB (additional dataset) [[1]](#ref1) | 0.601 |
+| FaceBehaviorNet [[2]](#ref2), [[3]](#ref3) | 0.483 |
+| VGG + mSVM [[4]](#ref4) | 0.316 |
+| baseDCNN + mSVM [[4]](#ref4) | 0.402 |
+| DLP-CNN + mSVM [[4]](#ref4) | 0.446 |
+| ResNet-18 + separate loss [[5]](#ref5) | 0.432 |
+| ReCNN [[6]](#ref6) | 0.461 |
+| ResNet-18 (ARM) [[7]](#ref7) | 0.471 |
+| PSR [[8]](#ref8) | 0.465 |
+| DACL [[9]](#ref9) | 0.466 |
+
+### References
+
+<a name="ref1">[1]</a> [_Multi-label compound expression recognition: C-expr database & network_](https://openaccess.thecvf.com/content/CVPR2023/html/Kollias_Multi-Label_Compound_Expression_Recognition_C-EXPR_Database__Network_CVPR_2023_paper.html)  
+<a name="ref2">[2]</a> [_Face behavior a la carte: Expressions, affect and action units in a single network_](https://arxiv.org/abs/1910.11111)  
+<a name="ref3">[3]</a> [_Distribution matching for heterogeneous multi-task learning: a large-scale face study_](https://arxiv.org/abs/2105.03790)  
+<a name="ref4">[4]</a> [_Reliable crowdsourcing and deep locality-preserving learning for expression recognition in the wild_](https://openaccess.thecvf.com/content_cvpr_2017/html/Li_Reliable_Crowdsourcing_and_CVPR_2017_paper.html)  
+<a name="ref5">[5]</a> [_Separate loss for basic and compound facial expression recognition in the wild_](https://proceedings.mlr.press/v101/li19b.html)  
+<a name="ref6">[6]</a> [_Relation-aware facial expression recognition_](https://ieeexplore.ieee.org/abstract/document/9496600)  
+<a name="ref7">[7]</a> [_Learning to amend facial expression representation via de-albino and affinity_](https://arxiv.org/abs/2103.10189)  
+<a name="ref8">[8]</a> [_Pyramid with super resolution for in-the-wild facial expression recognition_](https://ieeexplore.ieee.org/abstract/document/9143068)  
+<a name="ref9">[9]</a> [_Facial expression recognition in the wild via deep attentive center loss_](https://openaccess.thecvf.com/content/WACV2021/html/Farzaneh_Facial_Expression_Recognition_in_the_Wild_via_Deep_Attentive_Center_WACV_2021_paper.html)
+
 ## Installation
 
 Set up the environment using `environment.yaml`:
