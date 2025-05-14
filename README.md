@@ -34,7 +34,7 @@ This repository contains:
 
 ## Results and Benchmark Comparison
 
-The following table compares the performance of our proposed method against previous state-of-the-art models on the RAF-DB dataset for 11-class compound facial expression recognition.
+The following table compares the performance of our proposed method against previous state-of-the-art models on the RAF-DB dataset for 11-class compound facial expression recognition. (the previous SOTA methods' UAR values are from [[1]](#ref1))
 
 | Method | UAR |
 |--------|-----|
