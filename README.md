@@ -89,6 +89,8 @@ Visit the Hugging Face model page for the Chain-of-Affect pretrained model and m
 
 and save them under the path: ```output/lora_vision_all_ft_only```
 
+Note: Only the large files (```adapter_model.safetensors```, ```non_lora_state_dict.bin```) are hosted there. All config files are included in this repo under ```output/lora_vision_all_ft_only/```
+
 ### 2. Run the Inference Script
 
 Once the model files are in place, run the inference code by opening and executing ```finetune_lora_vision_all_ft_only.ipynb```
@@ -106,3 +108,14 @@ This notebook contains code for:
 >
 > It may have performance bottlenecks and bugs.
 
+This webcam demo accesses the webcam connected to the system and makes predictions about the current facial expression using the webcam footage.
+
+We use the YOLOv8-face model for cropping the facial region to use as input for the model.
+
+To run the program:
+1. [Download the pretrained weights from Hugging Face](#1-download-the-pretrained-weights-from-hugging-face), if you haven't already.
+2. Save the pretrained weights in the path: ```webcam_demo/lora_vision_all_ft_only```
+3. Run the python file with:
+  ```bash
+  python webcam_demo.py
+  ```
